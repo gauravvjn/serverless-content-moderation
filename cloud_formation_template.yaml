@@ -1,0 +1,733 @@
+---
+Metadata:
+  TemplateId: "arn:aws:cloudformation:ap-south-1:850995540176:generatedTemplate/3c312272-9fa4-4681-86cf-bd15a0d9a04f"
+Parameters:
+  LambdaFunction00ModerateContent009fuWqCodeS3ObjectVersionufLnP:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00ResizeImage00c5tCMCodeS3Bucketyq0Ko:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00UploadHandler00bbHJGCodeS3ObjectVersionCPxiX:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00ModerateContent009fuWqCodeS3KeyJYG5e:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00ResizeImage00c5tCMCodeSourceKMSKeyArnqpq6K:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00ResizeImage00c5tCM."
+  LambdaFunction00ModerateContent009fuWqCodeZipFilepysa9:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00ModerateContent009fuWqCodeImageUri20aub:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00UploadHandler00bbHJGCodeImageUriEJq5S:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00UploadHandler00bbHJGCodeSourceKMSKeyArn2YPCl:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00UploadHandler00bbHJG."
+  LambdaFunction00ResizeImage00c5tCMCodeS3ObjectVersionnjcwS:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunction00UploadHandler00bbHJGCodeS3BucketqKHpj:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00ResizeImage00c5tCMCodeImageUriFKQKv:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunction00ResizeImage00c5tCMCodeS3KeycUC8M:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00UploadHandler00bbHJGCodeZipFileJ1OVf:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00ModerateContent009fuWqCodeS3BucketDkyF6:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunction00ResizeImage00c5tCMCodeZipFile36DRW:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  For JSON, you must escape quotes and special characters such as newline (``\\\
+      n``) with a backslash.\n If you specify a function that interacts with an AWS\
+      \ CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunction00UploadHandler00bbHJGCodeS3KeyaFix4:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunction00ModerateContent009fuWqCodeSourceKMSKeyArnr1Jen:
+    NoEcho: "true"
+    Type: "String"
+    Description: "Value of write only property Code/SourceKMSKeyArn of resource LambdaFunction00ModerateContent009fuWq."
+Resources:
+  CloudWatchAlarm00TargetTrackingtableImageMetadataProvisionedCapacityLow1ddb3c5fbc5d4c2194ca3ade477d6124008l2oh:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b."
+      AlarmName: "TargetTracking-table/ImageMetadata-ProvisionedCapacityLow-1ddb3c5f-bc5d-4c21-94ca-3ade477d6124"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  ApiGatewayStage00v100mWh3e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Stage"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi0099d62803tl00K6Qyc"
+      DeploymentId:
+        Fn::GetAtt:
+        - "ApiGatewayDeployment00kyzydh00gOaRy"
+        - "DeploymentId"
+      StageName: "v1"
+      CacheClusterSize: "0.5"
+      TracingEnabled: false
+      CacheClusterEnabled: false
+  ApiGatewayDeployment0034634c00dnuxe:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi0099d62803tl00K6Qyc"
+  IAMManagedPolicy00policyserviceroleXRayAccessPolicy61d962514a1f48fea167ee990a42516100VVIrO:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "XRayAccessPolicy-61d96251-4a1f-48fe-a167-ee990a425161"
+      Path: "/service-role/"
+      Description: "Allow AWS Step Functions to call X-Ray daemon on your behalf"
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource:
+          - "*"
+          Action:
+          - "xray:PutTraceSegments"
+          - "xray:PutTelemetryRecords"
+          - "xray:GetSamplingRules"
+          - "xray:GetSamplingTargets"
+          Effect: "Allow"
+      Roles:
+      - Ref: "IAMRole00StepFunctionsContentModerationAndResizeStepFunctrolevro96dmyn00e3XpY"
+      Users: []
+  IAMRole00contentmoderationuploaderrole00m2Z8N:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess"
+      - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+      - "arn:aws:iam::aws:policy/AmazonRekognitionFullAccess"
+      - "arn:aws:iam::aws:policy/AWSStepFunctionsFullAccess"
+      - "arn:aws:iam::aws:policy/CloudWatchFullAccess"
+      MaxSessionDuration: 3600
+      RoleName: "content_moderation_uploader_role"
+      Description: "Allows Lambda functions to call AWS services on your behalf."
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "lambda.amazonaws.com"
+  ApiGatewayDeployment009y2m05005SqTJ:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi0099d62803tl00K6Qyc"
+  S3Bucket00gjresizedimage00HSqKY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "gj-resized-image"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  CloudWatchAlarm00TargetTrackingtableImageMetadataAlarmHighb5767cc7b61d43a981c1fe5c9e2c57aa00ZHqka:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b."
+      AlarmName: "TargetTracking-table/ImageMetadata-AlarmHigh-b5767cc7-b61d-43a9-81c1-fe5c9e2c57aa"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  StepFunctionsStateMachine00stateMachineContentModerationAndResizeStepFunction003us05:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::StepFunctions::StateMachine"
+    DeletionPolicy: "Retain"
+    Properties:
+      DefinitionString: "{\"Comment\":\"Image Processing Workflow\",\"StartAt\":\"\
+        Content Moderation\",\"States\":{\"Content Moderation\":{\"Type\":\"Task\"\
+        ,\"Resource\":\"arn:aws:states:::lambda:invoke\",\"OutputPath\":\"$.Payload\"\
+        ,\"Parameters\":{\"Payload.$\":\"$\",\"FunctionName\":\"arn:aws:lambda:ap-south-1:850995540176:function:ModerateContent:$LATEST\"\
+        },\"Next\":\"ConditionCheck\"},\"ConditionCheck\":{\"Type\":\"Choice\",\"\
+        Choices\":[{\"Variable\":\"$.moderation_result\",\"StringEquals\":\"fail\"\
+        ,\"Next\":\"EndWithFailure\"}],\"Default\":\"Image Resizing\"},\"Image Resizing\"\
+        :{\"Type\":\"Task\",\"Resource\":\"arn:aws:states:::lambda:invoke\",\"OutputPath\"\
+        :\"$.Payload\",\"Parameters\":{\"Payload.$\":\"$\",\"FunctionName\":\"arn:aws:lambda:ap-south-1:850995540176:function:ResizeImage:$LATEST\"\
+        },\"End\":true},\"EndWithFailure\":{\"Type\":\"Fail\",\"Error\":\"ModerationFailed\"\
+        ,\"Cause\":\"Content moderation failed.\"}}}"
+      EncryptionConfiguration:
+        Type: "AWS_OWNED_KEY"
+      LoggingConfiguration:
+        IncludeExecutionData: false
+        Level: "OFF"
+      StateMachineName: "ContentModerationAndResizeStepFunction"
+      RoleArn:
+        Fn::GetAtt:
+        - "IAMRole00StepFunctionsContentModerationAndResizeStepFunctrolevro96dmyn00e3XpY"
+        - "Arn"
+      Tags: []
+      StateMachineType: "STANDARD"
+      TracingConfiguration:
+        Enabled: false
+  CloudWatchAlarm00TargetTrackingtableImageMetadataAlarmLow549f06292f8e49f79437ed15539ab9fc00YsVmB:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b"
+      MetricName: "ConsumedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b."
+      AlarmName: "TargetTracking-table/ImageMetadata-AlarmLow-549f0629-2f8e-49f7-9437-ed15539ab9fc"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  LambdaFunction00UploadHandler00bbHJG:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeSourceKMSKeyArn2YPCl"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeS3ObjectVersionCPxiX"
+        S3Bucket:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeS3BucketqKHpj"
+        ZipFile:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeZipFileJ1OVf"
+        ImageUri:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeImageUriEJq5S"
+        S3Key:
+          Ref: "LambdaFunction00UploadHandler00bbHJGCodeS3KeyaFix4"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00contentmoderationuploaderrole00m2Z8N"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "UploadHandler"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/UploadHandler"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  CloudWatchAlarm00TargetTrackingtableImageMetadataProvisionedCapacityHighc9e59edd75de4ff4a7a0a22894b95a3c00WiW3E:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b"
+      MetricName: "ProvisionedWriteCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:3038424e-880f-442d-a9a7-85703659e332:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/1d83d6d5-52a2-4b9a-9deb-173ce3156c1b."
+      AlarmName: "TargetTracking-table/ImageMetadata-ProvisionedCapacityHigh-c9e59edd-75de-4ff4-a7a0-a22894b95a3c"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  LambdaFunction00ResizeImage00c5tCM:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 10
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeSourceKMSKeyArnqpq6K"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeS3ObjectVersionnjcwS"
+        S3Bucket:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeS3Bucketyq0Ko"
+        ZipFile:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeZipFile36DRW"
+        ImageUri:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeImageUriFKQKv"
+        S3Key:
+          Ref: "LambdaFunction00ResizeImage00c5tCMCodeS3KeycUC8M"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00contentmoderationuploaderrole00m2Z8N"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "ResizeImage"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/ResizeImage"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Layers:
+      - "arn:aws:lambda:ap-south-1:770693421928:layer:Klayers-p312-pillow:1"
+      Architectures:
+      - "x86_64"
+  S3Bucket00gjlambdalayer006V8GY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "gj-lambda-layer"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  CloudWatchAlarm00TargetTrackingtableImageMetadataAlarmHigh23fdfa0d255a4f278e72322718fb278900PlTFs:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 2
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777."
+      AlarmName: "TargetTracking-table/ImageMetadata-AlarmHigh-23fdfa0d-255a-4f27-8e72-322718fb2789"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 42
+  ApiGatewayDeployment00kyzydh00gOaRy:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi0099d62803tl00K6Qyc"
+  CloudWatchAlarm00TargetTrackingtableImageMetadataProvisionedCapacityLow973b2a97693a4ddfa5b2f74afd70faca00tBgLn:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777."
+      AlarmName: "TargetTracking-table/ImageMetadata-ProvisionedCapacityLow-973b2a97-693a-4ddf-a5b2-f74afd70faca"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  LambdaFunction00ModerateContent009fuWq:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeSourceKMSKeyArnr1Jen"
+        S3ObjectVersion:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeS3ObjectVersionufLnP"
+        S3Bucket:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeS3BucketDkyF6"
+        ZipFile:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeZipFilepysa9"
+        ImageUri:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeImageUri20aub"
+        S3Key:
+          Ref: "LambdaFunction00ModerateContent009fuWqCodeS3KeyJYG5e"
+      Role:
+        Fn::GetAtt:
+        - "IAMRole00contentmoderationuploaderrole00m2Z8N"
+        - "Arn"
+      FileSystemConfigs: []
+      FunctionName: "ModerateContent"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/ModerateContent"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  CloudWatchAlarm00ResizeImageErrorAlert00FHmVj:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanOrEqualToThreshold"
+      TreatMissingData: "missing"
+      Dimensions:
+      - Value:
+          Ref: "LambdaFunction00ResizeImage00c5tCM"
+        Name: "FunctionName"
+      Period: 10
+      EvaluationPeriods: 3
+      Namespace: "AWS/Lambda"
+      OKActions: []
+      AlarmActions: []
+      MetricName: "Errors"
+      ActionsEnabled: true
+      AlarmDescription: "This alarm detects high error counts. Errors includes the\
+        \ exceptions thrown by the code as well as exceptions thrown by the Lambda\
+        \ runtime. You can check the logs related to the function to diagnose the\
+        \ issue."
+      AlarmName: "ResizeImageErrorAlert"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      DatapointsToAlarm: 3
+      Tags: []
+      Threshold: 2
+  LambdaPermission00functionUploadHandler00v11YO:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunction00UploadHandler00bbHJG"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:ap-south-1:850995540176:99d62803tl/*/POST/upload"
+      Principal: "apigateway.amazonaws.com"
+  S3Bucket00gjuploadedimage00eRWIp:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        BlockPublicAcls: true
+      BucketName: "gj-uploaded-image"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  DynamoDBTable00ImageMetadata008cCsA:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "ImageMetadata"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "image_id"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PROVISIONED"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      ProvisionedThroughput:
+        WriteCapacityUnits: 1
+        ReadCapacityUnits: 1
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "image_id"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  CloudWatchAlarm00TargetTrackingtableImageMetadataAlarmLowf110ebd52a204d6592861370fbc1af0900kLae8:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "LessThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 60
+      EvaluationPeriods: 15
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777"
+      MetricName: "ConsumedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777."
+      AlarmName: "TargetTracking-table/ImageMetadata-AlarmLow-f110ebd5-2a20-4d65-9286-1370fbc1af09"
+      Statistic: "Sum"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 30
+  CloudWatchAlarm00TargetTrackingtableImageMetadataProvisionedCapacityHigh8ef71655a566441291dc479706060ea100wYSBT:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::CloudWatch::Alarm"
+    DeletionPolicy: "Retain"
+    Properties:
+      ComparisonOperator: "GreaterThanThreshold"
+      Dimensions:
+      - Value:
+          Ref: "DynamoDBTable00ImageMetadata008cCsA"
+        Name: "TableName"
+      Period: 300
+      EvaluationPeriods: 3
+      Namespace: "AWS/DynamoDB"
+      OKActions: []
+      AlarmActions:
+      - "arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777"
+      MetricName: "ProvisionedReadCapacityUnits"
+      ActionsEnabled: true
+      AlarmDescription: "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:ap-south-1:850995540176:scalingPolicy:10fbf8d9-bbfa-4668-9293-3ca2d8bef750:resource/dynamodb/table/ImageMetadata:policyName/$ImageMetadata-scaling-policy:createdBy/9b16e7a8-0a61-4b1e-a804-ac0e5ea14777."
+      AlarmName: "TargetTracking-table/ImageMetadata-ProvisionedCapacityHigh-8ef71655-a566-4412-91dc-479706060ea1"
+      Statistic: "Average"
+      InsufficientDataActions: []
+      Tags: []
+      Threshold: 1
+  IAMRole00StepFunctionsContentModerationAndResizeStepFunctrolevro96dmyn00e3XpY:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::Role"
+    DeletionPolicy: "Retain"
+    Properties:
+      Path: "/service-role/"
+      ManagedPolicyArns:
+      - "arn:aws:iam::850995540176:policy/service-role/LambdaInvokeScopedAccessPolicy-c3634af7-e3c6-46b1-a826-0c609b1144ea"
+      - "arn:aws:iam::850995540176:policy/service-role/XRayAccessPolicy-61d96251-4a1f-48fe-a167-ee990a425161"
+      MaxSessionDuration: 3600
+      RoleName: "StepFunctions-ContentModerationAndResizeStepFunct-role-vro96dmyn"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Action: "sts:AssumeRole"
+          Effect: "Allow"
+          Principal:
+            Service: "states.amazonaws.com"
+  IAMManagedPolicy00policyserviceroleLambdaInvokeScopedAccessPolicyc3634af7e3c646b1a8260c609b1144ea00Z7IRX:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::IAM::ManagedPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      ManagedPolicyName: "LambdaInvokeScopedAccessPolicy-c3634af7-e3c6-46b1-a826-0c609b1144ea"
+      Path: "/service-role/"
+      Description: "Allow AWS Step Functions to invoke Lambda functions on your behalf"
+      Groups: []
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource:
+          - "arn:aws:lambda:ap-south-1:850995540176:function:ModerateContent:*"
+          - "arn:aws:lambda:ap-south-1:850995540176:function:ResizeImage:*"
+          Action:
+          - "lambda:InvokeFunction"
+          Effect: "Allow"
+        - Resource:
+          - "arn:aws:lambda:ap-south-1:850995540176:function:ModerateContent"
+          - "arn:aws:lambda:ap-south-1:850995540176:function:ResizeImage"
+          Action:
+          - "lambda:InvokeFunction"
+          Effect: "Allow"
+      Roles:
+      - Ref: "IAMRole00StepFunctionsContentModerationAndResizeStepFunctrolevro96dmyn00e3XpY"
+      Users: []
+  ApiGatewayRestApi0099d62803tl00K6Qyc:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::RestApi"
+    DeletionPolicy: "Retain"
+    Properties:
+      ApiKeySourceType: "HEADER"
+      EndpointConfiguration:
+        Types:
+        - "REGIONAL"
+      DisableExecuteApiEndpoint: false
+      BinaryMediaTypes:
+      - "image/png"
+      Name: "Image Upload API"

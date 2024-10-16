@@ -1,0 +1,42 @@
+{
+  "Comment": "Image Processing and Moderation Workflow",
+  "StartAt": "ContentModeration",
+  "States": {
+    "ContentModeration": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:ap-south-1:850995540176:function:ModerateContent:$LATEST"
+      },
+      "Next": "ConditionCheck"
+    },
+    "ConditionCheck": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.moderation_result",
+          "StringEquals": "PASS",
+          "Next": "ImageResizing"
+        }
+      ],
+      "Default": "EndWithFailure"
+    },
+    "ImageResizing": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:ap-south-1:850995540176:function:ResizeImage:$LATEST"
+      },
+      "End": true
+    },
+    "EndWithFailure": {
+      "Type": "Fail",
+      "Error": "ModerationFailed",
+      "Cause": "Content moderation failed."
+    }
+  }
+}
